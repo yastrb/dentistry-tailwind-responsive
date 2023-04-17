@@ -10,7 +10,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
     <title>Dentist</title>
-    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./src/css/output.css">
 </head>
 
 <body class="font-poppins bg-[#FEFEFE]  mx-auto ">
@@ -21,10 +21,10 @@
                 <div class=" flex items-end justify-between h-20">
                     <!-- Logo -->
                     <div class="pt-2 hidden md:block">
-                        <img src="./assets/logo.png" alt="logo">
+                        <img src="./src/assets/logo.png" alt="logo">
                     </div>
                     <!-- Menu Desktop -->
-                    <div class="hidden md:flex space-x-6 ">
+                    <div class="hidden md:flex space-x-6 text-sm px-3 ">
                         <a class="tracking-wider text-purple hover:text-pink relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-pink after:scale-0 hover:after:scale-100 after:transition-transform transition-all"
                             href="#">Team</a>
                         <a class="tracking-wider text-purple hover:text-pink relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-pink after:scale-0 hover:after:scale-100 after:transition-transform  transition-all"
@@ -40,7 +40,7 @@
                     <div class="hidden top-0 left-0 bottom-0 right-0 bg-white shadow-lg shadow-indigo-500/40  py-5 transition-transform"
                         id="menu-mobile">
                         <div class="flex flex-col items-center justify-center gap-3">
-                            <a class="tracking-wider text-lg text-purple hover:text-pink relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-pink after:scale-0 hover:after:scale-100 after:transition-transform transition-all mb-4"
+                            <a class="tracking-wider text-lg text-purple hover:text-pink relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-pink after:scale-0 hover:after:scale-100 after:transition-transform transition-all"
                                 href="#">Team</a>
                             <a class="tracking-wider text-lg text-purple hover:text-pink relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-pink after:scale-0 hover:after:scale-100 after:transition-transform  transition-all"
                                 href="#">Praxis</a>
@@ -68,7 +68,7 @@
 
                     </div>
                     <!-- Button -->
-                    <button class="bg-pink text-gray-50 w-64 h-full"><i class='bx bx-calendar pr-3'></i>Termine
+                    <button class="bg-pink text-gray-50 w-64 h-full hover:from-pink hover:bg-gradient-to-r hover:to-darkblue hover:shadow-lg transition-all"><i class='bx bx-calendar pr-3'></i>Termine
                         online
                     </button>
                     <!-- Toggle -->
@@ -84,10 +84,10 @@
                     <h1 class=" font-bold text-4xl text-center lg:text-left text-pink pb-8">Zähne erhalten – kleine Schäden beheben</h1>
                     <span class="text-center lg:text-left block pb-14 leading-6 text-[#2E3192] tracking-widest">In Deutschland gefertigter <br>
                         Zahnersatz ist hochwertig und <br> langlebig.</span>
-                    <button class=" bg-pink font-bold py-5 px-11 text-[#fff] ">Termine online</button>
+                    <button class=" bg-pink font-bold py-5 px-11 text-[#fff] hover:from-pink hover:bg-gradient-to-r hover:to-darkblue hover:shadow-xl transition-all">Termine online</button>
                 </div>
                 <div class="hidden sm:block flex-auto lg:w-1/2">
-                    <img class="" src="./assets/main.png" alt="image">
+                    <img class="" src="./src/assets/main.png" alt="image">
                 </div>
             </section>
         </div>
@@ -128,7 +128,7 @@
                                     placeholder="Type your Message Here...." name="text"></textarea>
                             </div>
                             <div>
-                                <button class="py-5 w-full bg-pink font-bold text-white" name="submit" type="submit"
+                                <button class="py-5 w-full bg-pink font-bold text-white hover:from-pink hover:bg-gradient-to-r hover:to-darkblue hover:shadow-xl transition-all" name="submit" type="submit"
                                     id="contact-submit">Termine online</button>
                             </div>
                         </form>
@@ -152,13 +152,13 @@
         </div>
         <!-- ENTSTEHT -->
         <section class="bg-purple relative pb-24">
-            <img class="absolute object-cover h-full w-full " src="./assets/background.png" alt="">
-            <img class="absolute object-cover h-full w-full" src="./assets/line.png" alt="">
+            <img class="absolute object-cover h-full w-full " src="./src//assets/background.png" alt="">
+            <img class="absolute object-cover h-full w-full" src="./src/assets/line.png" alt="">
             <div class=" text-white container mx-auto px-4 max-w-screen-xl pt-20">
                 <div class="relative ">
                     <h3 class="font-bold text-left text-3xl pb-8">WIE EINE EINLAGEFÜLLUNG ENTSTEHT</h3>
-                    <img class="animate-pulse absolute -top-1 left-[620px]" src="./assets/big.png" alt="">
-                    <img class="animate-pulse  absolute -top-3 left-[600px]" src="./assets/small.png" alt="">
+                    <img class="animate-pulse absolute -top-1 left-[620px]" src="./src/assets/big.png" alt="">
+                    <img class="animate-pulse  absolute -top-3 left-[600px]" src="./src/assets/small.png" alt="">
                 </div>
                 <div class="flex flex-col md:flex-row pb-14 justify-between">
                     <div class="w-1/2">
@@ -175,7 +175,7 @@
                         <p class="pb-3">Befestigungs-Material härtet aus</p>
                     </div>
                 </div>
-                <button class="bg-pink py-3 px-11">Termine online</button>
+                <button class=" relative cursor-pointer bg-pink py-3 px-11 hover:from-pink hover:bg-gradient-to-l hover:to-darkblue hover:shadow-xl transition-all">Termine online</button>
             </div>
         </section>
         <!-- Article -->
@@ -232,31 +232,31 @@
             <h3 class="mx-auto px-1 text-dark text-3xl font-bold pb-8 w-1/2">Was tun, wenn Kariesbakterien Teile
                 eines Zahns schädigen?</h3>
             <div class="mx-auto grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 gap-10 mb-24">
-                <div class="bg-purple pt-12 px-12 flex flex-col justify-between h-[420px]">
+                <div class="bg-purple pt-12 px-12 flex flex-col justify-between h-[420px] hover:scale-125 transition-all">
                     <p class="pb-8 text-white font-bold text-3xl">Amalgam</p>
                     <p class="text-white">Das silberfarbene Amalgam ist weich und leicht
                         formbar. Ein Zahn kann direkt gefüllt werden.</p>
                     <div class=" relative">
-                        <img class="" src="./assets/card1.png" alt="img">
-                        <img class="absolute top-14 left-36" src="./assets/big.png" alt="">
-                        <img class="absolute top-10 left-32" src="./assets/small.png" alt="">
+                        <img class="" src="./src/assets/card1.png" alt="img">
+                        <img class="absolute top-14 left-36" src="./src/assets/big.png" alt="">
+                        <img class="absolute top-10 left-32" src="./src/assets/small.png" alt="">
                     </div>
                 </div>
-                <div class="bg-[#F6F6F6] pt-12 px-12 flex flex-col justify-between h-[420px] ">
+                <div class="bg-[#F6F6F6] pt-12 px-12 flex flex-col justify-between h-[420px] hover:scale-125 transition-all">
                     <p class="pb-8 text-purple font-bold text-3xl">Komposit
                         („Kunststoff“)</p>
-                    <p class="text-purple pb-28">Das silberfarbene Amalgam ist weich und leicht
+                    <p class="text-purple pb-1">Das silberfarbene Amalgam ist weich und leicht
                         formbar. Ein Zahn kann direkt gefüllt werden.</p>
-                    <button class="bg-pink text-white py-4 px-12 ">Termine online</button>
+                    <button class="bg-pink text-white py-4 hover:from-pink hover:bg-gradient-to-l hover:to-darkblue hover:shadow-xl transition-all ">Termine online</button>
                 </div>
-                <div class="bg-pink pt-12 px-12 flex flex-col justify-between h-[420px]">
+                <div class="bg-pink pt-12 px-12 flex flex-col justify-between h-[420px] hover:scale-125 transition-all">
                     <p class="pb-8 text-white font-bold text-3xl">Gold</p>
                     <p class="text-white">Weil Gold alleine zu weich ist, wird es mit anderen Metallen vermischt
                         (Legierung).</p>
                     <div class="pt-16 relative">
-                        <img src="./assets/card3.png" alt="img">
-                        <img class="absolute top-7 left-60" src="./assets/big.png" alt="">
-                        <img class="absolute top-3 left-52" src="./assets/small.png" alt="">
+                        <img src="./src/assets/card3.png" alt="img">
+                        <img class="absolute top-7 left-60" src="./src/assets/big.png" alt="">
+                        <img class="absolute top-3 left-52" src="./src/assets/small.png" alt="">
                     </div>
                 </div>
             </div>
@@ -282,7 +282,7 @@
                         berechnet.</p>
                 </div>
             </div>
-            <button  class="inline bg-pink text-gray-50 w-64 h-14">Termine online</button>
+            <button  class="inline bg-pink text-gray-50 w-64 h-14 hover:from-pink hover:bg-gradient-to-l hover:to-darkblue hover:shadow-xl transition-all">Termine online</button>
         </section>
     </main>
     <!-- Footer -->
@@ -290,7 +290,7 @@
         <div class=" pb-40 px-4 container mx-auto pt-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             <div>
                 <div class="pb-10">
-                    <img src="./assets/logo.png" alt="logo">
+                    <img src="./src/assets/logo.png" alt="logo">
                 </div>
                 <p class="text-purple leading-9">Medizinisches Versorgungszentrum für Zahnheilkunde, Kinder- und Jugendzahnheilkunde und Kieferorthopädie.</p>
             </div>
